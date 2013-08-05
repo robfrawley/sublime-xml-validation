@@ -1,0 +1,11 @@
+SCRIBE: XML VALIDATION
+======================
+
+Description:
+	This package provides a means of performing DTD validation
+	on XML and XML-derrived languages, such as ScML.
+
+Usage:
+	- Use the keyboard shortcut "Ctrl+Alt+V" or the top-level
+	  menu item "Scribe Inc." > "DTD Validator" to perform the
+	  XML DTD validation

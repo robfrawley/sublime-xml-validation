@@ -1,0 +1,12 @@
+[
+    {
+        "caption": "ScML: Pretty Print",
+        "command": "format"
+    }, {
+        "caption": "ScML: Validate DTD",
+        "command": "validate_dtd"
+    }, {
+        "caption": "ScML: Show Error List",
+        "command": "show_error_list"
+    }
+]

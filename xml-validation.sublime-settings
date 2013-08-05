@@ -1,0 +1,10 @@
+{
+    // string that is used to ident the XML file when reformating
+    "ident": "    ",
+
+    "path-windows": "xmllint.exe",
+
+    "path-unix": "xmllint",
+
+    "path": "xmllint"
+}
