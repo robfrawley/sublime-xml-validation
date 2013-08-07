@@ -93,17 +93,13 @@ def error_list_on_done(index):
 def get_exec_xmllint():
     if platform.system() == 'Windows':
         path = CONFIG.get('path-windows').encode("ascii")
-        print "IS WINDOWS"
-        print path
+        print "Operating System: Windows [XP-8]"
         path_exec = find_exec(path)
-        print path_exec
         return path_exec
     else:
         path = CONFIG.get('path-unix').encode("ascii")
-        print "NOT WINDOWS"
-        print path
+        print "Operating System: *nix"
         path_exec = find_exec(path)
-        print path_exec
         return path
 
 def is_exe(path_unescaped):
@@ -113,7 +109,7 @@ def is_exe(path_unescaped):
 def find_exec(lint_exec):
 
     exec_path = lint_exec
-    env_path = ''.join([sublime.packages_path(), '\\sublime-xml-validator\\libxml\\'])
+    env_path = ''.join([sublime.packages_path(), '\\scribenet-sublime-xml-validator\\libxml\\'])
     env_path_already_there = False
     for path in sys.path:
         print path
@@ -126,7 +122,6 @@ def find_exec(lint_exec):
         exe_file = os.path.join(path, lint_exec)
         if is_exe(exe_file):
             return ''.join(['"', exe_file, '"'])
-    print "BAAAAAAAAAAAAAAAAAAAAAAAAAADDDDDDDDDDDDDDDDDDDDDDD!!!!!"
     return None
 
 def format(view):

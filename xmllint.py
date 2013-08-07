@@ -113,7 +113,7 @@ class XmlLintCommand(sublime_plugin.WindowCommand):
                 return lint_exec
         else:
             if self.exec_set == 0:
-                sys.path.append(''.join([sublime.packages_path(), '\\sublime-xml-validation\\libxml']))
+                sys.path.append(''.join([sublime.packages_path(), '\\scribenet-sublime-xml-validation\\libxml']))
             for path in sys.path:
                 exe_file = os.path.join(path, lint_exec)
                 if is_exe(exe_file):
